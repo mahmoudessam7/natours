@@ -1,0 +1,36 @@
+.feature-box {
+    background-color: rgba($color-white, 0.8);
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    transition: transform 0.2s;
+
+    @include respond(tab-port) {
+        padding: 5rem 2rem;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    svg {
+        width: 6rem;
+        height: 6rem;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        display: inline-block;
+        fill: url(#MyGradient);
+
+        @include respond(tab-port) {
+            margin-bottom: 1rem;
+        }
+        
+    }
+
+    
+
+    &:hover {
+        box-shadow: 0 2rem 5rem rgba($color-black, 0.15);
+        transform: translateY(-1.5rem) scale(1.03);
+    }
+}
